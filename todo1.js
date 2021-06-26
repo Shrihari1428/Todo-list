@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT||3000, function() {
   console.log("Server has started on port 3000....");
 });
 
